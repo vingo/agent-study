@@ -1,0 +1,28 @@
+{
+  "name": "03-dto-gen",
+  "version": "1.0.0",
+  "description": "阶段 2 · v1：接口文档 → TS DTO，结构化输出 + 校验重试",
+  "main": "index.ts",
+  "scripts": {
+    "start": "env -u ANTHROPIC_BASE_URL -u ANTHROPIC_AUTH_TOKEN tsx --env-file=.env index.ts",
+    "verify": "tsx verify-cli.ts",
+    "agent": "env -u ANTHROPIC_BASE_URL -u ANTHROPIC_AUTH_TOKEN tsx --env-file=.env agent-cli.ts",
+    "eval": "env -u ANTHROPIC_BASE_URL -u ANTHROPIC_AUTH_TOKEN tsx --env-file=.env eval.ts",
+    "compare": "env -u ANTHROPIC_BASE_URL -u ANTHROPIC_AUTH_TOKEN tsx --env-file=.env compare.ts",
+    "typecheck": "tsc --noEmit",
+    "mini": "env -u ANTHROPIC_BASE_URL -u ANTHROPIC_AUTH_TOKEN tsx --env-file=.env mini-cli.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0",
+    "zod": "^4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2"
+  }
+}

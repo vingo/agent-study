@@ -1,0 +1,23 @@
+{
+  "name": "00-bare-loop",
+  "version": "1.0.0",
+  "description": "阶段 0：手写 agent 循环，不用任何框架",
+  "main": "index.ts",
+  "scripts": {
+    "start": "env -u ANTHROPIC_BASE_URL -u ANTHROPIC_AUTH_TOKEN tsx --env-file=.env index.ts",
+    "check": "env -u ANTHROPIC_BASE_URL -u ANTHROPIC_AUTH_TOKEN tsx --env-file=.env check.ts",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.68.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}

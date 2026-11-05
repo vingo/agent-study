@@ -1,0 +1,25 @@
+{
+  "name": "02-mcp-slb",
+  "version": "1.0.0",
+  "description": "阶段 1：把 slb-app-query skill 包成 MCP server",
+  "main": "server.ts",
+  "scripts": {
+    "dev": "tsx --env-file=.env server.ts",
+    "probe": "tsx --env-file=.env probe.ts",
+    "typecheck": "tsc --noEmit",
+    "call": "tsx --env-file=.env call.ts"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "1.30.0",
+    "zod": "4.6.5"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.9.2"
+  }
+}
