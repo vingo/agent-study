@@ -1,0 +1,95 @@
+alias cls="clear"
+git_current_branch=`git branch --show-current`
+
+alias gcl='git clone '
+alias ga='git add '
+
+alias gl='git log '
+alias gln='git log -n '
+
+alias push='ga . && gcm "build" && gps'
+
+alias gb='git branch'
+alias gba='git branch -a '
+alias gbd='git branch -d '  #  delete local branch after check merge status.
+alias gbdf='git branch -D '     # force delete local branch.
+alias gbdr='git push origin -d $1' #delete remote.
+alias gbr='git branch --remote '
+alias gbso='git branch --set-upstream-to=origin/$git_current_branch'
+
+alias gc='git commit '
+alias gcm='git commit -m '
+alias gcam='git commit -a -m ' 
+alias gcp='git cherry-pick ' 
+alias gcpc='git cherry-pick --continue' 
+alias gcps='git cherry-pick --skip' 
+alias gcpa='git cherry-pick --abort' 
+
+
+  
+alias gco='git checkout '
+alias gcob='git checkout -b $1'
+alias gck='git cherry-pick '
+
+alias gm='git merge '
+alias gmc='git merge --continue'
+alias gms='git merge --skip'
+alias gma='git merge --abort'
+
+alias gpl='git pull '
+alias gplr='git pull --rebase'
+
+
+
+alias gplo='git pull origin '
+alias gps='git push '
+alias gpsf='git push -f '
+alias gpso='git push --set-upstream origin $git_current_branch'
+
+alias gpsuo='git push --set-upstream origin '
+alias gpsc='git push origin head:refs/for/$git_current_branch'
+
+
+alias gr='git remote '
+alias gra='git remote add '
+alias grv='git remote -v'
+
+#revert
+alias grv='git revert --no-edit '   # grv {commid}
+alias grve='git revert '
+
+alias gs='git status '
+alias gss='git status -s '
+
+#rebase
+alias grb='git rebase '
+alias grbc='git rebase --continue'
+alias grbs='git rebase --skip'
+alias grba='git rebase --abort'
+alias grbi='git rebase -i '
+
+# stash
+alias gsts='git stash save'
+alias gsta='git stash apply'
+alias gstc='git stash clear'
+alias gstd='git stash drop'
+alias gstl='git stash list'
+alias gstp='git stash pop'
+alias gstst='git stash show --text'
+
+alias gta='git tag -a ' # add local tag
+alias gtd='git tag -d ' #remove local tag
+alias gtdo='git push origin :refs/tags/{tagName}' #remove tag
+alias gtps='git push origin --tags' #push tags
+alias cls='clear'
+alias gd='git diff '
+#application 
+#alias vscode="D://Users/cbmao/AppData/Local/Programs/Microsoft\ VS\ Code/Code.exe"
+#alias idea="D://Program\ Files/JetBrains/IntelliJ\ IDEA\ 2020.3/bin/idea64.exe"
+alias idm="D://Program\ Files/Idm/IDMan.exe"
+alias aaa="clear"
+alias gdc='gd-gui' #反編譯jar包
+alias findport="netstat -ano | findstr $1" # 查询端口
+alias ko="taskkill /F /PID $1" # kill进程
+alias kol="taskkill -F -PID $1" # kill进程
+alias vscode="/Users/maochaobo/Downloads/packages/Visual\ Studio\ Code.app"
